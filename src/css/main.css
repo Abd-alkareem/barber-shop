@@ -1,0 +1,35 @@
+:root {
+    --main-bule-color: #2C4E80;
+    --dark-blue-color: #00215E;
+    --yellow-color: #FFC55A;
+    --orange-color: #FC4100;
+    --main-font: "Poetsen One", sans-serif;
+    --alt-font: "Jaro", sans-serif;
+}
+
+/*  */
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+
+ul {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/*  */
+.project-holder {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: var(--main-bule-color); */
+}

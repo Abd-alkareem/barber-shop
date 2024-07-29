@@ -1,0 +1,215 @@
+:root {
+    --main-blue-color: #3C5B6F;
+    --dark-blue-color: #153448;
+    --yellow-color: #FFBB70;
+    --orange-color: #FC4100;
+    --maroon-color: #D80032;
+    --gray-color: #948979;
+    --light-gray-: #DFD0B8;
+    --main-font: "Poetsen One", sans-serif;
+    --alt-font: "Jaro", sans-serif;
+}
+
+
+
+/*  */
+.home {
+    background-color: var(--dark-blue-color);
+    min-height: 90vh;
+
+}
+
+.home .container {
+    max-width: 80%;
+}
+
+.home .container .main-part {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--yellow-color);
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+}
+
+.home .container .main-part .d-app {
+    height: 60px;
+    width: 60px;
+    padding: 0 16px;
+    overflow: hidden;
+    background-color: var(--yellow-color);
+    position: absolute;
+    right: 0px;
+    top: 00px;
+    border-radius: 0 20px 0 20px;
+    border-left: 8px solid var(--dark-blue-color);
+    border-bottom: 8px solid var(--dark-blue-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home .container .main-part .d-app .d-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .container .main-part .d-app span {
+    position: absolute;
+    top: 50%;
+    left: 500%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: 0.3s;
+    text-transform: capitalize;
+    font-weight: 500;
+    width: 130px;
+}
+
+.home .container .main-part .d-app:hover span {
+    left: 66%;
+}
+
+.home .container .main-part .d-app:hover {
+    width: 170px;
+}
+
+.home .container .main-part .landing {
+    width: 50%;
+}
+
+.home .container .main-part .landing>span {
+    margin: 30px 30px 10px;
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--dark-blue-color);
+    font-family: var(--alt-font);
+}
+
+.home .container .main-part .landing p {
+    margin: 0 30px 10px;
+    font-size: 30px;
+    font-family: var(--main-font);
+    color: var(--dark-blue-color);
+}
+
+.home .container .main-part .landing div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 30px;
+    border-bottom: 1px solid var(--dark-blue-color);
+    color: var(--dark-blue-color)
+}
+
+.home .container .main-part .landing div span {
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+
+.home .container .main-part .image {
+    width: 50%;
+    background: url(../image/barber-test-6-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home .container .secound-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.home .container .secound-part .discount {
+    min-height: 34vh;
+    border-radius: 16px;
+    width: 25%;
+    background-color: var(--maroon-color);
+    position: relative;
+    font-family: var(--main-font);
+}
+
+.home .container .secound-part .discount img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+}
+
+.home .container .secound-part .discount span:nth-of-type(1) {
+    display: block;
+    margin: 20px 10px 0px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.home .container .secound-part .discount span:nth-of-type(2) {
+    display: block;
+    margin: 0 10px 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.home .container .secound-part .discount span:nth-of-type(3) {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    text-transform: capitalize;
+}
+
+.home .container .secound-part .discount p {
+    color: white;
+    width: 90%;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.home .container .secound-part .testimoniols {
+    min-height: 34vh;
+    border-radius: 16px;
+    width: 25%;
+    background-color: var(--gray-color);
+}
+
+.home .container .secound-part .rate {
+    min-height: 34vh;
+    border-radius: 16px;
+    flex: 1;
+    background: url(../image/rate-image.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .container .secound-part .rate::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--dark-blue-color);
+    opacity: 0.4;
+    border-radius: 16px;
+}
